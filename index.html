@@ -1,0 +1,234 @@
+<!doctype html>
+ <html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Clara's Classroom</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <style>
+    #ClarasClassRoomHeader h1 {
+          font-family: "Eraser", 'Comic Sans MS';
+          font-size: 48pt;
+          color: white;
+      }
+      
+    
+      .blackboard {
+          background-image: url(img/blackboard-bg-1.jpg);
+          color: white;
+          font-family: Eraser;
+      }
+      
+      .blackboard a {
+          color: white;
+      }
+      .blackboard > .page-header > h1 {
+          text-align: center;
+      }
+      
+
+  </style>
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+
+  </header>
+  <div class="container">
+      
+      <div class="row">
+          <div class="blackboard">
+            <div class="page-header">
+                <h1>CLARA'S CLASSROOM</h1>
+            </div>
+            
+
+            <div class="row">
+                <div class="span5 question">
+                    <h3>
+                        Question 1:
+                    </h3>
+
+                    <h4>
+                        Safe sleep is
+                    </h4>
+
+                    <ol type="a">
+                        <li>On stomach</li>
+                        <li>On side</li>
+                        <li class="correct">On back</li>
+                        <li>All of the above</li>
+                    </ol>
+                 </div> <!-- question-->
+                 <div class="span5 offset1">
+
+                     <div class="answer">
+                        <h4>WRONG!!!</h4>
+                        <p>
+                            A is not the correct answer
+                        </p>
+                     </div>
+                     <div class="answer">
+                        <h4>WRONG!!</h4>
+                         <p>
+                            B is not the correct answer
+                         </p>
+                     </div>
+                     <div class="answer">
+                        <h4>CORRECT</h4>
+                        <p>
+                            On the back is the way to go!!
+                         </p>
+                     </div>
+                     <div class="answer">
+                        <h4>WRONG!!</h4>     
+                        <p>
+                            D is not the correct answer
+                        </p>
+                     </div>
+                 </div>
+            </div> <!-- row-->
+
+
+            <div class="row">
+                <div class="span5 question">
+                    <h3>
+                        Question 2:
+                    </h3>
+
+                    <h4>
+                        Co-Sleeping is
+                    </h4>
+
+                    <ol type="a">
+                        <li class="correct">Sharing Room</li>
+                        <li>Sharing Bed</li>
+                        <li>Sleeping at the same time</li>
+                        
+                    </ol>
+                 </div> <!-- question-->
+                 <div class="span5 offset1">
+                      <div class="answer">
+                        <h4>Q2 CORRECT!!</h4>
+                        <p>
+                            On the back is the way to go
+                        </p>
+                     </div>
+                     <div class="answer">
+                        <h4>Q2 WRONG!!</h4>
+                         <p>
+                            B is not the correct answer
+                         </p>
+                     </div>
+                     <div class="answer">
+                        <h4>Q2 WRONG!!</h4>
+                        <p>
+                            C is not right
+                         </p>
+                     </div>
+                    
+                 </div>
+            </div> <!-- row-->
+
+            <div class="row">
+                <div class="span2">                   
+                <a id="prevQuestion" href="javascript:void(0);">Previous Question</a>     
+                </div>
+                <div class="offset9" style="text-align: right">
+                <a id="nextQuestion" href="javascript:void(0);">Next Question</a>
+                </div>
+            </div>
+            </div> <!-- blackboard -->
+        </div><!-- row -->
+  </div> <!-- container -->
+  <footer>
+
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  <script>window.jQuery  || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script>window.angular || document.write('<script src="js/libs/angular.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  <script>
+      $(function () {
+          $('.answer').hide();
+
+          $('.question ol > li').mouseenter(function () {
+              $(this).css({ textDecoration: 'underline', cursor: 'pointer' });
+          }).mouseleave(function () {
+              $(this).css({ textDecoration: 'none', cursor: 'auto' });
+          }).click(function () {
+              
+              var answers = $(this).closest('div.question').next().find('div.answer');    
+              console.log(answers)         
+              answers.hide().eq($(this).index()).show();
+              
+          });
+
+          //hide all the questions except the first
+          var questionRows = $('.row > div.question');
+          questionRows.hide();
+          questionRows.first().show();
+
+          var questionIdx = 0;
+          $('#prevQuestion').click(function () {
+              if (questionIdx > 0) {
+                  questionRows.eq(questionIdx).hide();
+                  questionIdx--;
+                  questionRows.eq(questionIdx).show();
+                  $('.answer').hide();
+              }
+          });
+
+          $('#nextQuestion').click(function () {
+              if (questionIdx < questionRows.size()) {
+                  questionRows.eq(questionIdx).hide();
+                  questionIdx++;
+                  questionRows.eq(questionIdx).show();
+                  $('.answer').hide();
+              }
+          })
+
+      })
+  </script>
+</body>
+</html>
