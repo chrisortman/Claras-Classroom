@@ -18,17 +18,13 @@
   <link href="css/style.css" rel="stylesheet" media="screen">
 
   <style>
-    #ClarasClassRoomHeader h1 {
-          font-family: "Conv_EraserRegular", 'Comic Sans MS';
-          font-size: 48pt;
-          color: white;
+         body { 
+          /* background-image: url(http://lachslegacy.org/files/quicksiteimages/bg.gif); */
       }
-      
-    
       .blackboard {
           background-image: url(img/blackboard-bg-1.jpg);
           color: white;
-          font-family: Eraser;
+          font-family: 'Conv_EraserRegular', 'Comic Sans MS';
       }
       
       .blackboard a {
@@ -38,7 +34,13 @@
           text-align: center;
       }
       
-
+      .no-space [class*="span"] {
+            margin-left: 0;
+        }
+      
+      .no-space {
+    margin-left:0;
+}
   </style>
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -50,11 +52,33 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
-
-  </header>
+  
+        
+         
+        <div style="width: 900px;height: 12px;">
+            <span style="width:30%;background: #D4EDB9;padding: 0;">
+                &nbsp;
+            </span>
+            <span style="width:70%;background: #B1DF80;padding: 0;">
+                &nbsp;
+            </span>
+      </div>
+      <div style="width: 100%">
+       
+      </div>
   <div class="container">
       
+      <div class="row no-space">
+        <div class="span3" style="background: #D4EDB9;height: 12px;">
+        </div>
+        <div class="span9" style="background: #B1DF80;height: 12px;">
+        </div>
+      </div>
+      <div class="row no-space">
+       <a href="http://lachslegacy.org">
+            <img src="http://lachslegacy.org/publishImages/logo_logoB.jpg" alt="" border="0" width="246" height="54">   
+        </a>
+      </div>
       <div class="row">
           <div class="blackboard">
             <div class="page-header">
@@ -63,56 +87,69 @@
                     CLARA'S CLASSROOM
                 </h1>
             </div>
+<<<<<<< HEAD
            
               <!-- QUestion 1--> 
+=======
+            
+              <div id="greeting" class="row">
+                <div class="span10 offset1">
+                    <p>
+                        Welcome to Clara's Classroom!!
+                    </p>
+
+                    <div style="text-align: right;">
+                    <p>
+                        <a id="startQuiz" href="javascript:void(0);">Start Quiz</a>
+                    </p>
+                    </div>
+                </div>
+              </div>
+              <!-- QUESTION 1-->
+>>>>>>> Adding lachs legacy logo and welcome text
 
             <div class="row">
                 <div class="span5 question">
                     <h3>
-                        Question 1:
+        
+                                     Question 1:
                     </h3>
 
                     <h4>
-                        Safe sleep is
+                        True or False:  SIDS can be prevented.
                     </h4>
 
                     <ol type="a">
-                        <li>On stomach</li>
-                        <li>On side</li>
-                        <li class="correct">On back</li>
-                        <li>All of the above</li>
+                        <li>True</li>
+                        <li class="correct">False</li>
+                        
                     </ol>
                  </div> <!-- question-->
                  <div class="span5 offset1">
 
                      <div class="answer">
-                        <h4>WRONG!!!</h4>
+                        <h4>Wrong!!!</h4>
                         <p>
-                            A is not the correct answer
+                            Until we know what causes SIDS, it can't be 100% prevented.  We can however reduce the risk of death from outside stressers.
                         </p>
                      </div>
-                     <div class="answer">
-                        <h4>WRONG!!</h4>
-                         <p>
-                            B is not the correct answer
-                         </p>
-                     </div>
+                     
                      <div class="answer">
                         <h4>CORRECT</h4>
                         <p>
-                            On the back is the way to go!!
+                           False!  While SIDS can't be prevented there are things that can be done to help reduce the risk of SIDS happening.  They include sleeping infants on their backs and in safe sleep environment as well as offering pacifier, breastfeeding when possible, immunizing infants, room sharing, avoid overheating, and many other things.  For more info visit http://kidshealth.org/parent/general/sleep/sids.html# or the CJ Foundation for SIDS @ www.cjsids.org
                          </p>
-                     </div>
-                     <div class="answer">
-                        <h4>WRONG!!</h4>     
-                        <p>
-                            D is not the correct answer
-                        </p>
+                     
                      </div>
                  </div>
             </div> <!-- row-->
 
+<<<<<<< HEAD
               <!-- Question 2-->
+=======
+
+            <!-- QUESTION 2 -->
+>>>>>>> Adding lachs legacy logo and welcome text
             <div class="row">
                 <div class="span5 question">
                     <h3>
@@ -120,13 +157,13 @@
                     </h3>
 
                     <h4>
-                        Co-Sleeping is
+                        Where is the safest place for baby to sleep?
                     </h4>
 
                     <ol type="a">
-                        <li class="correct">Sharing Room</li>
-                        <li>Sharing Bed</li>
-                        <li>Sleeping at the same time</li>
+                        <li class="correct">In their own crib</li>
+                        <li>In bed with a parent</li>
+                        <li>Where ever baby falls asleep</li>
                         
                     </ol>
                  </div> <!-- question-->
@@ -134,25 +171,26 @@
                       <div class="answer">
                         <h4>Q2 CORRECT!!</h4>
                         <p>
-                            On the back is the way to go
+                            According to the AAP, infants should sleep in a safety-approved crib, portable crib, play yard, or bassinet.  Their sleep area should be without blankets, crib bumpers, stuffed animals, or sleep positioners. http://pediatrics.aappublications.org/content/128/5/e1341.full.html#sec-16
                         </p>
                      </div>
                      <div class="answer">
                         <h4>Q2 WRONG!!</h4>
                          <p>
-                            B is not the correct answer
+                            Infants should never sleep with a parent.  Bed sharing can increase the risk of SIDS as well as accidental suffocation of the infant.  http://pediatrics.aappublications.org/content/128/5/e1341.full.html#sec-19 
                          </p>
                      </div>
                      <div class="answer">
                         <h4>Q2 WRONG!!</h4>
                         <p>
-                            C is not right
+                            Babies should be placed in a safe sleep environement once asleep.  Carseats, rockers, couches, and other sleep surfaces are dangerous and can increase a babies risk of accidental suffocation and SIDS.
                          </p>
                      </div>
                     
                  </div>
             </div> <!-- row-->
 
+<<<<<<< HEAD
               <!-- Question 3-->
                   <div class="row">
                 <div class="span5 question">
@@ -162,6 +200,20 @@
 
                     <h4>
                         Sleep sacks are...
+=======
+            <!-- QUESTION 3-->
+          
+
+            <div class="row">
+                <div class="span5 question">
+                    <h3>
+        
+                                     Question 3:
+                    </h3>
+
+                    <h4>
+                        What is the safest sleep position for any baby?
+>>>>>>> Adding lachs legacy logo and welcome text
                     </h4>
 
                     <ol type="a">
@@ -174,31 +226,55 @@
                  <div class="span5 offset1">
 
                      <div class="answer">
+<<<<<<< HEAD
                         <h4>WRONG!!!</h4>
                         <p>
                             A is not the correct answer
+=======
+                        <h4>Wrong!!!</h4>
+                        <p>
+                            Babies who sleep on their tummies have a 5 times greater risk of SIDS. 
+>>>>>>> Adding lachs legacy logo and welcome text
                         </p>
                      </div>
                      <div class="answer">
                         <h4>WRONG!!</h4>
                          <p>
+<<<<<<< HEAD
                             B is not the correct answer
+=======
+                            Babies left to sleep on their sides can roll onto their tummies.  Sleep positioners, used to keep baby in the side sleeping position, are not safe for babies because of the risk of suffocation because babies can wiggle out of the postitioner and their face can become trapped against the positioner.  
+>>>>>>> Adding lachs legacy logo and welcome text
                          </p>
                      </div>
                      <div class="answer">
                         <h4>CORRECT</h4>
                         <p>
+<<<<<<< HEAD
                             On the back is the way to go!!
+=======
+                            Back is Best!  According to the American Academy of Pediatrics babies should always sleep on their backs.  In 1994 they launched the "Back to Sleep" campaign to help reduce the risk of SIDS deaths.  Since then SIDS deaths have decreased by 50%!!  http://www.aap.org/en-us/about-the-aap/aap-press-room/pages/Profile-of-SIDS-Risk-Shifts-After-Launch-of-Back-to-Sleep-Campaign.aspx?nfstatus=401&nftoken=00000000-0000-0000-0000-000000000000&nfstatusdescription=ERROR%3a+No+local+token
+>>>>>>> Adding lachs legacy logo and welcome text
                          </p>
                      </div>
                      <div class="answer">
                         <h4>WRONG!!</h4>     
                         <p>
+<<<<<<< HEAD
                             D is not the correct answer
                         </p>
                      </div>
                  </div>
             </div>
+=======
+                            The single, correct sleep position is on their back.
+                        </p>
+                     </div>
+                 </div>
+            </div> <!-- row-->
+
+
+>>>>>>> Adding lachs legacy logo and welcome text
             <div class="row">
                 <div class="span2">                   
                 <a id="prevQuestion" href="javascript:void(0);">Previous Question</a>     
@@ -246,17 +322,23 @@
           }).mouseleave(function () {
               $(this).css({ textDecoration: 'none', cursor: 'auto' });
           }).click(function () {
-              
-              var answers = $(this).closest('div.question').next().find('div.answer');    
-              console.log(answers)         
+
+              var answers = $(this).closest('div.question').next().find('div.answer');
+              console.log(answers)
               answers.hide().eq($(this).index()).show();
-              
+
           });
 
           //hide all the questions except the first
           var questionRows = $('.row > div.question');
           questionRows.hide();
-          questionRows.first().show();
+          $('#prevQuestion, #nextQuestion').hide();
+
+          $('#startQuiz').click(function () {
+              $('#greeting').hide();
+              questionRows.first().show();
+              $('#prevQuestion, #nextQuestion').show();
+          });
 
           var questionIdx = 0;
           $('#prevQuestion').click(function () {
